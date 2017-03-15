@@ -73,7 +73,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>com.iyihua.tools.trending.Application</mainClass>
+							<mainClass>com.iyihua.demo.docker.Application</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
