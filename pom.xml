@@ -12,7 +12,7 @@
 		<slf4j-version>1.7.19</slf4j-version>
 		<jedis-version>2.8.0</jedis-version>
 		<lombok-version>1.16.14</lombok-version>
-		<docker.registry>192.168.1.21:5000</docker.registry>
+		<docker.registry>127.0.0.1:5000</docker.registry>
 	</properties>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -108,9 +108,6 @@
 						<resource>
 							<directory>${project.build.directory}</directory>
 							<include>${project.build.finalName}.jar</include>
-							<!-- <includes>
-						        <include>**/Dockerfile</include>
-						    </includes> -->
 						</resource>
 					</resources>
 				</configuration>
