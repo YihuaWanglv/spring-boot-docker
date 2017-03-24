@@ -46,6 +46,16 @@
 	</dependencies>
 	<build>
 		<!-- <finalName>spring-boot-docker</finalName> -->
+		<resources>
+			<resource>
+			    <!-- <directory>${project.basedir}</directory> -->
+			    <directory>${project.build.directory}</directory>
+			    <filtering>true</filtering>
+			    <includes>
+			        <include>**/Dockerfile</include>
+			    </includes>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
