@@ -58,15 +58,15 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<executions>
+				<!-- <executions>
 					<execution>
 						<goals>
 							<goal>repackage</goal>
 						</goals>
 					</execution>
-				</executions>
+				</executions> -->
 			</plugin>
-			<plugin>
+			<!-- <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
 				<configuration>
@@ -77,20 +77,11 @@
 						</manifest>
 					</archive>
 				</configuration>
-			</plugin>
-			<plugin>
+			</plugin> -->
+			<!-- <plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>exec-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<compilerVersion>1.8</compilerVersion>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
+			</plugin> -->
 			<plugin>
 				<groupId>org.projectlombok</groupId>
 				<artifactId>lombok-maven-plugin</artifactId>
@@ -102,12 +93,9 @@
 				<version>0.4.10</version>
 				<configuration>
 					<imageName>${docker.registry}/${project.groupId}/${project.artifactId}:${project.version}</imageName>
-					<!-- <baseImage>java</baseImage> -->
 					<dockerDirectory>${project.build.outputDirectory}</dockerDirectory>
-					<!-- <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint> -->
 					<resources>
 						<resource>
-							<!-- <targetPath>/</targetPath> -->
 							<directory>${project.build.directory}</directory>
 							<include>${project.build.finalName}.jar</include>
 						</resource>
