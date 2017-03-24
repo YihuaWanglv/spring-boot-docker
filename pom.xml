@@ -46,16 +46,6 @@
 	</dependencies>
 	<build>
 		<!-- <finalName>spring-boot-docker</finalName> -->
-		<resources><!-- 使用@@站位符，输出Dockerfile至docker文件夹 -->
-            <resource>
-                <directory>${project.build.directory}</directory>
-                <filtering>true</filtering>
-                <includes>
-                    <include>**/Dockerfile</include>
-                </includes>
-                <targetPath>../docker</targetPath>
-            </resource>
-        </resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
