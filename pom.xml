@@ -107,10 +107,10 @@
 					<resources>
 						<resource>
 							<directory>${project.build.directory}</directory>
-							<!-- <include>${project.build.finalName}.jar</include> -->
-							<includes>
+							<include>${project.build.finalName}.jar</include>
+							<!-- <includes>
 						        <include>**/Dockerfile</include>
-						    </includes>
+						    </includes> -->
 						</resource>
 					</resources>
 				</configuration>
