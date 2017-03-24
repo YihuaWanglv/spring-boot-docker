@@ -110,7 +110,7 @@
 							<!-- <include>${project.build.finalName}.jar</include> -->
 							<filtering>true</filtering>
 						    <includes>
-						        <include>**/Dockerfile</include>
+						        <include>${project.build.outputDirectory}/Dockerfile</include>
 						    </includes>
 						</resource>
 					</resources>
