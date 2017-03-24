@@ -107,10 +107,8 @@
 					<dockerDirectory>docker</dockerDirectory>
 					<resources>
 						<resource>
-							<targetPath>/</targetPath>
 							<directory>${project.build.directory}</directory>
 							<include>${project.build.finalName}.jar</include>
-							
 						</resource>
 					</resources>
 				</configuration>
