@@ -11,4 +11,10 @@ public class HomeController {
 		
 		return "hello.";
 	}
+	
+	@GetMapping("/new")
+	public Object newApi() {
+		
+		return "hello. this is new......";
+	}
 }
